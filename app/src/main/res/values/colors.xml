@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#67b2ff</color>
+    <color name="colorPrimaryDark">#67b2ff</color>
+    <color name="recyclerBG">#f3f3f3</color>
+    <color name="white">#ffffff</color>
+    <color name="textCard">#616161</color>
+    <color name="cardBG">#ffffff</color>
+
+    <color name="colorPrimary_Night">#3f3f3f</color>
+    <color name="colorPrimaryDark_Night">#454545</color>
+    <color name="recyclerBG_Night">#454545</color>
+    <color name="white_Night">#4d4d4d</color>
+    <color name="textCard_Night">#eaeaea</color>
+    <color name="cardBG_Night">#515151</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="bule">#225575</color>
+    <color name="apl">#00ffffff</color>
+
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="ToolbarBG">@color/colorPrimary</item>
+        <item name="main_background">@color/recyclerBG</item>
+    </style>
+
+
+    <style name="AppTheme_Night" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_Night</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Night</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="ToolbarBG">@color/colorPrimary_Night</item>
+        <item name="main_background">@color/recyclerBG_Night</item>
+    </style>
+
+
+    <style name="toolbar_theme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+</resources>

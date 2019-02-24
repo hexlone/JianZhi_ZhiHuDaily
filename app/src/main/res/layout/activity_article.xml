@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_background"
+    android:id="@+id/coordinatorLayout01"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+
+            android:theme="@style/toolbar_theme"
+            android:id="@+id/collapsingToolbarLayout01"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="@android:color/transparent">
+
+            <FrameLayout
+                android:id="@+id/frameLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:fitsSystemWindows="true">
+                <com.flaviofaria.kenburnsview.KenBurnsView
+                    android:id="@+id/kenBurnsView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarOfArticle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_collapseMode="pin">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/toolbarTitle01"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/titleOfArticle"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:gravity="left"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:id="@+id/imageSource"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/main_background">
+        <FrameLayout
+            android:background="?attr/main_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/webView01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </FrameLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
